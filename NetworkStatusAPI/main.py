@@ -1,8 +1,8 @@
 import json
 import random
-from uvicorn import Config, Server
+from fastapi import FastAPI
 from pydantic import BaseModel
-from fastapi import FastAPI, Request
+from uvicorn import Config, Server
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
